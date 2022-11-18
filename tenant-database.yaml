@@ -15,4 +15,4 @@ spec:
   lifecycle: production
   owner: tenant-department
   system: work-management
-  apiConsumedBy: ['component:Get-Tenant-Data']
+  apiConsumedBy: ['component:get-tenant-data']
