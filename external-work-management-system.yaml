@@ -10,5 +10,4 @@ spec:
   type: external-system
   lifecycle: production
   owner: work-department
-  system: work-management
   apiConsumedBy: ['component:get-planned-work']
