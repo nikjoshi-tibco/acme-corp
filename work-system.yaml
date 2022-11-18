@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: work-management
+  description: 'Work management system, dispatching people to fix houses'
+spec:
+  owner: work-department
+  domain: tenants

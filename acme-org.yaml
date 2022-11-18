@@ -60,3 +60,13 @@ spec:
     email: tim@acme.com
     picture: https://m.media-amazon.com/images/I/61bp+b1uAVL._AC_UF894,1000_QL80_.jpg
   memberOf: [ tenant-department ]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: all-acme-components
+  description: A collection of all ACME components
+spec:
+  targets:
+    - ./tenant-domain.yaml
+    - ./work-system.yaml

@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: tenants
+  description: Everything related to Tenants
+  links:
+    - url: https://en.wikipedia.org/wiki/Tenant
+      title: Domain Readme
+    - url: https://www.iamexpat.nl/housing/netherlands-rentals/rental-contracts-housing-rights
+      title: Tenant Rights
+      icon: dashboard
+spec:
+  owner: group:ACME
