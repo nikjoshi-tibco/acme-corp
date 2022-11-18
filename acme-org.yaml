@@ -1,0 +1,62 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: ACME
+  description: A Company that Makes Everything
+spec:
+  type: organization
+  profile:
+    displayName: ACME Organization
+    email: info@acme.com
+    picture: https://static.wikia.nocookie.net/looneytunes/images/5/56/Comp_2.jpg
+  children: [ product-management, work-department ]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: work-department
+  description: The Work Department
+spec:
+  type: department
+  profile:
+    displayName: ACME Organization
+    email: info@acme.com
+    picture: https://m.media-amazon.com/images/M/MV5BMTc2MzU4NzQxNF5BMl5BanBnXkFtZTgwMzY0NTg3MjE@._V1_QL75_UY281_CR93,0,190,281_.jpg
+  parent: ACME
+  children: [ peter ]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: peter
+spec:
+  profile:
+    displayName: Peter the Planning Developer
+    email: peter@acme.com
+    picture: https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Sylvester_the_Cat.svg/800px-Sylvester_the_Cat.svg.png
+  memberOf: [ work-department ]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: tenant-department
+  description: The Tenant Department
+spec:
+  type: department
+  profile:
+    displayName: The Tenant Department
+    email: tenant-department@acme.com
+    picture: https://www.looper.com/img/gallery/the-history-of-looney-tunes-explained/l-intro-1600855559.jpg
+  parent: ACME
+  children: [ tim ]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: tim
+spec:
+  profile:
+    displayName: Tim the Tenant Developer
+    email: tim@acme.com
+    picture: https://m.media-amazon.com/images/I/61bp+b1uAVL._AC_UF894,1000_QL80_.jpg
+  memberOf: [ tenant-department ]
