@@ -9,7 +9,7 @@ spec:
     displayName: ACME Organization
     email: info@acme.com
     picture: https://static.wikia.nocookie.net/looneytunes/images/5/56/Comp_2.jpg
-  children: [ product-management, work-department ]
+  children: [ tenant-department, work-department ]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
