@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: external-work-management-system
+  description: External System with work projects
+  tags:
+    - external-system
+    - work
+spec:
+  type: external-system
+  lifecycle: production
+  owner: work-department
+  system: work-management
+  apiConsumedBy: ['component:get-planned-work']
