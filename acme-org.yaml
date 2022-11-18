@@ -70,3 +70,4 @@ spec:
   targets:
     - ./tenant-domain.yaml
     - ./work-system.yaml
+    - ./tenant-database.yaml

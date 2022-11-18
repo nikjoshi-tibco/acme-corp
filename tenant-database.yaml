@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: tenant-database
+  description: Database tenant details
+  tags:
+    - database
+    - cars
+    - policies
+  links:
+    - title: Database Console
+      url: https://eu-west-1.console.aws.amazon.com/rds/home?region=eu-west-1#
+      icon: Storage
+spec:
+  type: database
+  lifecycle: production
+  owner: tenant-department
+  system: work-management
+  apiConsumedBy: ['component:Get-Tenant-Data']
