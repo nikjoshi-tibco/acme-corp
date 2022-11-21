@@ -14,5 +14,5 @@ spec:
   type: database
   lifecycle: production
   owner: tenant-department
-  system: work-management
+#  system: work-management
   apiConsumedBy: ['component:get-tenant-data']
