@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: external-work-management-system
-  description: External System with work projects
+  description: External System with lots of work projects
   tags:
     - external-system
     - work
