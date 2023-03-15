@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: data-table-exposure
+  description: 'A system that exposes data tables'
+spec:
+  owner: group:ACME
+  domain: data

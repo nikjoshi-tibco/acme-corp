@@ -72,3 +72,5 @@ spec:
     - ./work-system.yaml
     - ./tenant-database.yaml
     - ./external-work-management-system.yaml
+    - ./data-domain.yaml
+    - ./data-system.yaml
