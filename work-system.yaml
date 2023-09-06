@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
-kind: System
+kind: qasystem
 metadata:
-  name: work-management
-  description: 'Work management system, dispatching people to fix houses'
+  name: tibco-management
+  description: 'Tibco QA management'
 spec:
-  owner: work-department
-  domain: tenants
+  owner: nikAmol
+  domain: QA
